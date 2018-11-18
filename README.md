@@ -14,4 +14,5 @@ The project does not use Google map Geocoding api, bacause only one api request 
 
 ## Screenshots and Viedo:
 https://github.com/a1091150/googlemappractice/blob/master/somepictures/preview.png
+
 https://youtu.be/XcBPx2w7MaU
