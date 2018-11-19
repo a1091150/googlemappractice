@@ -160,8 +160,8 @@ class GPController: UIViewController , GMSMapViewDelegate , UITableViewDataSourc
                     if let json : [String:Any] = try JSONSerialization.jsonObject(with: data!, options: .allowFragments) as? [String: Any]{
                         print("Your Json Responed: \(json)")
                         if  (json["status"] as! String) == "OK"{
-                            let routes = json["routes"] as? [Any]
-                            let overview_polyline = routes?[0] as?[String:Any]
+                            let routes = json["routes"] as? [String:Any]
+                            let overview_polyline = routes?["overview_polyline"] as?[String:Any]
                             let polyString = overview_polyline?["points"] as?String
                             self.showPath(polyStr: polyString!)
                         }else{
